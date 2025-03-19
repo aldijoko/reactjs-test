@@ -103,6 +103,8 @@ const Dashboard = ({ username, onLogout }) => {
 
       <a href="https://snack.expo.dev/@aldijoko/react-native-test" target="_blank">React Native Test</a>
 
+      <a href="https://replit.com/@aldijoko1/expressjsapidata?v=1" target="_blank">Replit Express JS</a>
+
       <h2 className="text-xl font-bold">Label: {label}</h2>
       <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 mt-2" onClick={() => setLabel(dataArray[Math.floor(Math.random() * dataArray.length)].info)}>
         Ubah Label
