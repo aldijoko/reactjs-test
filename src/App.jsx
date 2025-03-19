@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { sha256 } from "crypto-hash";
-// import crypto from "crypto";
 import './App.css'
 
 const LoginPage = ({ onLogin }) => {
@@ -140,7 +139,9 @@ const Dashboard = ({ username, onLogout }) => {
         </tbody>
       </table>
 
-      {/* Input Nama Depan */}
+      <div className="mt-2 flex flex-col items-center">
+        <h2 className="text-xl font-semibold mt-8 mb-2">Hash Data</h2>
+      
       <input
         type="text"
         placeholder="Masukkan Nama Depan"
@@ -149,7 +150,6 @@ const Dashboard = ({ username, onLogout }) => {
         onChange={(e) => setName(e.target.value)}
       />
 
-      {/* Dropdown Jenis Kelamin */}
       <select
         className="p-2 border border-gray-300 rounded mb-2"
         value={gender}
@@ -163,6 +163,7 @@ const Dashboard = ({ username, onLogout }) => {
       </button>
       <p>Data Hash :</p>
       <p>{hashShow}</p>
+      </div>
     </div>
   );
 };
